@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
+		<title>PCMI Formulas</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+		<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML-full"></script>
+		<script src="ASCIIMathML.js"></script>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<img id="mode-database" class="icon" src="icons/folder.svg" height="24" width="24" style="display:none;"/>
+			<img id="mode-renderer" class="icon" src="icons/calculator.svg" height="24" width="24"/>
+		</div>
+		<div id="container-1">
+			<h1>PCMI Formulas</h1>
+			<div id="repoTree">Loading maths...</div>
+			<div id="fileContent" class="content">Select a file to view its content...</div>
+		</div>
+		<div id="container-2" style="display:none;">
+			<h1>Renderer</h1>
+			<textarea id="input" placeholder="Enter math string here..." spellcheck="false"></textarea>
+			<div id="output" class="content"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="index.js"></script>
+</html>

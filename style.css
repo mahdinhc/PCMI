@@ -1,0 +1,63 @@
+body {
+	font-family: "Nunito", sans-serif;
+	margin: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+	cursor:pointer;
+}
+
+#repoTree {
+	margin-top: 20px;
+}
+.content {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	white-space: pre-wrap; /* preserve formatting */
+	overflow: auto;
+	border-radius: 5px;
+}
+.math-container {
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.math-container math {
+	margin:4px;
+}
+math {
+	font-family: MJXc-TeX-size2-R, MJXc-TeX-size2-Rw;
+}
+
+textarea { 
+    font-size: 16px;
+    background: #73fb5b3d;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    height: 200px;
+    resize: none;
+    outline: none;
+    border: none;
+    color: #2d6324;
+    width: -webkit-fill-available;
+}
+
+
+.jstree-default .jstree-anchor {
+	height: auto;
+	padding: 5px;
+}
+.jstree-default .jstree-clicked {
+	background: #73fb5b3d;
+	border-radius: 5px;
+	border: 1px solid #73fb5b21;
+}
+
