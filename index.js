@@ -57,16 +57,6 @@ function buildJsTreeData(flatTree, directory) {
 	return treeData
 }
 
-function updateNode() {
-	$('.jstree-anchor').each(function(){
-		var nodeText = $(this).text()
-		if (nodeText.substring(nodeText.lastIndexOf('.')) == ".asc") {
-			nodeText = getBasename(nodeText)
-			$(this).html(asciimath.parseMath(nodeText))
-		}
-	})
-}
-
 
 function renderAsciiMath() {
 	const input = document.getElementById("input").value
@@ -94,8 +84,6 @@ $(document).ready(function() {
 					data: treeData
 				}
 			})
-			.on('redraw.jstree', updateNode)
-			.click('redraw.jstree', updateNode)
 			.on('select_node.jstree', function(e, data) {
 				const node = data.node;
 				if (node.data.type == "file") {
