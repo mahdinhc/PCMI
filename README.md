@@ -1,3 +1,3 @@
-### MathDB
+### PCMI
 
-Open source mathematics database.
+Formulas and other stuffs for Physics, Chemistry, Math and ICT.
